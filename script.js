@@ -46,6 +46,12 @@ const form = document.querySelector("form");
 form.addEventListener("submit", (event)=>{
 let validCheck = 6;
 let messages = [];
+
+errCheck = document.getElementById("error-box");
+if(typeof(errCheck) != 'undefined' && errCheck != null){
+    errCheck.remove();
+}
+
 //Check name (min. 2 char)
 nameCheck = document.getElementById("name");
 nameReg = /[A-Za-z\s]{2,}/;
@@ -114,8 +120,6 @@ if(validCheck != 6){
     <pre>${messages.join('\r\n')}</pre>`;
 
     form.appendChild(errorEle);
-}else{
-    errorEle.remove();
 }
 })
 
