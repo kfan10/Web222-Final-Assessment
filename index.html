@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>KING CHUEN FAN -- WEB222 Final Assessment</title>
+    <!-- Icon CSS - For insert icon only-->
+    <script src="https://kit.fontawesome.com/4dc95e9bde.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <header class="navbar">
+            <nav>
+                 <div class="menu">
+                    <ul class="nav-links">
+                        <li class="nav-item"><a class="nav-link" href="#homepage"><i class="fa-solid fa-house fa-sm"></i> HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about"><i class="fa-solid fa-address-card fa-sm"></i> ABOUT ME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#edu"><i class="fa-solid fa-school fa-sm"></i> EDUCATION</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cnt"><i class="fa-solid fa-envelope-open fa-sm"></i> CONTACT ME</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content of the Webpage -->
+        <main class="main">
+            <!-- Homepage -->
+            <section class="home" id="homepage">
+                <div class="home-cnt">
+                    <div class="home-img">
+                        <img src="photo.jpg" alt="home-img">
+                    </div>
+                    <div class="home-text">
+                        <h1>King Chuen Fan</span></h1>
+                        <h3>Multinational Software Company Owner </h3>
+                    </div>
+                    <div class="home-btns">
+                        <a download="Resume_fankingchuen.pdf" href="Resume_fankingchuen.pdf"><button class="btn"><i class="fa-regular fa-circle-down fa-sm"></i> Resume</button></a>
+                        <a href="#cnt"><button class="btn"><i class="fa-regular fa-envelope fa-sm"></i> Contact Me</button></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="abt" id="about">
+                <h2 class="heading">ABOUT ME</h2>
+                <div class="abt-content">
+                    <div class="abt-details">
+                        <h4 class="abt-title">Basic Information</h4>
+                        <table class="about-info">
+                            <tbody>
+                            <tr>
+                                <td>Age</td>
+                                <td>31</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>kfan10@myseneca.ca</td>
+                            </tr>
+                            <tr>
+                                <td>Language</td>
+                                <td>English, Cantonese, Mandarin</td>
+                            </tr>
+                            <tr>
+                                <td>Course</td>
+                                <td>WEB222 - Web Programming Principles</td>
+                            </tr>
+                            <tr>
+                                <td>Class Section</td>
+                                <td>NFF</td>
+                            </tr>
+                            <tr>
+                                <td>Student ID</td>
+                                <td>165968215</td>
+                            </tr>
+                            <tr>
+                                <td>Instructor</td>
+                                <td>Mark Meritt</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                    <div class="abt-text">
+                        <h4 class="abt-title">About Me</h4>
+                        <p class="about-info">I am an intertnational studnet from Hong Kong. I am studying Computer Programming diploma in Seneca College, Toronto. Canada is a great country with a lot of potential and possibility for Computer Programming student. I am looking forward to get a job and start my new Canadian life here.</p>
+                    </div>
+                </div>
+                <div class="abt-honesty">
+                    <h4 class="abt-title">Academic Honesty</h4>
+                    <p class="about-info">I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.</p>
+                    <br>
+                    <p class="about-info">Date: December 10, 2022<p>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="edu" id="edu">
+                <h2 class="heading">EDUCATION</h2>
+                <div class="edu-content">
+                    <div class="edu-title">
+                        <h3>Bachelor's Degree</h3>
+                    </div>
+                    <div class="edu-box">
+                        <h4>Hong Kong Polytechnic University</h4>
+                        <h5>2014</h5>
+                        <p>Travel Industry Management</p>
+                    </div>
+                    <span id="space"></span>
+                        <div class="edu-title">
+                            <h3>Diploma</h3>
+                        </div>
+                    <div class="edu-box">
+                        <h4>Seneca College</h4>
+                        <h5>2023</h5>
+                        <p>Computer Programming</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Form Section -->
+            <section class="cnt" id="cnt">
+                <h2 class="heading">CONTACT ME</h2>
+                <div class="cnt-content">
+                    <p><span class="text-danger">*</span> is mandatory.</p>
+                    <form action="https://httpbin.org/post" class="cnt-form" id="form" method="POST">
+                        <!-- Name -->
+                        <label for="name">Name <span class="text-danger">*</span></label>
+                        <input 
+                            type="text"
+                            id="name"
+                            name="name"
+                            autocomplete="nickname"
+                            placeholder="Your Name, please."
+                            tabindex="1"
+                            required
+                        >
+                        <small>Minimum 2 Alphabets</small>
+
+                        <!-- Email -->
+                        <label for="email">Email <span class="text-danger">*</span></label>
+                        <input 
+                        type="email"
+                        name="email"
+                        id="email"
+                        autocomplete="email"
+                        placeholder="xxx@xxx.com"
+                        tabindex="2"
+                        required
+                        >
+
+                        <!-- Address -->
+                        <label for="address">Address <span class="text-danger">*</span></label>
+                        <textarea
+                        name="address"
+                        id="address"
+                        autocomplete="street-address"
+                        placeholder="Your address, please"
+                        cols="30"
+                        rows="1"
+                        tabindex="3"
+                        required></textarea>
+
+                        <!-- Datalist for cities in Canada -->
+                        <label for="name">City <span class="text-danger">*</span></label>
+                        <input
+                        type="text"
+                        id="city"
+                        name="city" 
+                        list="suggestion"
+                        autocomplete="Toronto"
+                        placeholder="City"
+                        tabindex="4"
+                        required
+                        >
+                        <datalist id="suggestion">
+                            <option>Calgary</option>
+                            <option>Edmonton</option>
+                            <option>Ottawa</option>
+                            <option>Montreal</option>
+                            <option>Toronto</option>
+                            <option>Vancouver</option>
+                            <option>Winnipeg</option>
+                        </datalist>
+
+                        <!-- Postal Code *No pattern needed is input tag as js validate the pattern-->
+                        <label for="pCode">Postal Code <span class="text-danger">*</span></label>
+                        <input
+                        type="text"
+                        id="pCode"
+                        name="Postal_Code"
+                        autocomplete="postal-code"
+                        placeholder="M2J 2X5"
+                        tabindex="5"
+                        required
+                        >
+
+                        <!-- Purpose of this message -->
+                        <div class="radio-btns">
+                            <label for="purpose">You are .... <span class="text-danger">*</span></label><br>
+                            <input
+                            type="radio"
+                            id="question"
+                            name="purpose"
+                            value="question"
+                            tabindex="6"
+                            checked
+                            onclick="HideBox()"
+                            >
+                            <label for="question">Asking me a question</label><br>
+                            <input
+                            type="radio"
+                            id="comment"
+                            name="purpose"
+                            value="comment"
+                            tabindex="7"
+                            onclick="HideBox()"
+                            >
+                            <label for="comment">Giving me a comment to improve</label><br>
+                            <input
+                            type="radio"
+                            id="hiring"
+                            name="purpose"
+                            value="hiring"
+                            tabindex="8"
+                            onclick="ShowBox()"
+                            >
+                            <label for="hiring">Hiring me for a job</label>
+                            <span id="ratebox"></span>
+                        </div>
+
+                        <!-- Message -->
+                        <label for="message">Message for me <span class="text-danger">*</span></label>
+                        <textarea
+                        name="message"
+                        id="msg"
+                        cols="30"
+                        rows="5"
+                        placeholder="Message for me...."
+                        tabindex="9"
+                        ></textarea>
+                        <small>Minimum 2 characters</small>
+
+                        <!-- At least 1 more input control -->
+                        <br>
+                        <fieldset>
+                            <legend>Consent <span class="text-danger">*</span></legend>
+                            <div>
+                              <input
+                              type="checkbox"
+                              id="checkbox"
+                              name="checkbox"
+                              tabindex="10"
+                              checked
+                              required
+                              >
+                              <label for="checkbox">By checking this box, you agree the above information you provided will send to me.</label>
+                            </div>
+                        </fieldset>
+                                             
+
+                        <!-- Buttons -->
+                        <div class="form-btns">
+                            <input
+                            type="submit"
+                            value="Submit"
+                            id="submit-btn"
+                            tabindex="11"
+                            >
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Webpage Footer -->
+        <footer class="footer">
+            <h4>King Chuen Fan</h4>
+            <p>This website is for WEB222 course Final Assessment purpose only.<br><span>Copyright&copy; 2022</span></p>
+            <ul class="social-list">
+                <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/peter-fan-8a7094173"><i class="fa-brands fa-linkedin fa-2xl" id="social_icon"></i></a></li>
+                <li class="social-item"><a class="social-link" href="https://github.com/kfan10/Web222-Final-Assessment"><i class="fa-brands fa-github fa-2xl" id="social_icon"></i></a></li>
+                <li class="social-item"><a class="social-link" href="https://discord.gg/xbaU9N4aZw"><i class="fa-brands fa-discord fa-2xl" id="social_icon"></i></a></li>
+            </ul>
+        </footer>
+
+             <!-- Top Button-->
+     <button onclick="topFunction()" id="myBtn" title="top"><img src="arrow-up.png" alt="up" id="up"><br>Top</button>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
