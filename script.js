@@ -42,14 +42,12 @@ rateboxclick = false;
 
 // Form Validation
 
-const form = document.querySelector("form");
-errorEle = document.createElement("div");
-errorEle.id = "error-box";
-errorEle.style.display = 'none';
-
 form.addEventListener("submit", (event)=>{
 let validCheck = 6;
 let messages = [];
+const form = document.querySelector("form");
+errorEle = document.createElement("div");
+errorEle.id = "error-box";
 errorEle.innerHTML = "";
 //Check name (min. 2 char)
 nameCheck = document.getElementById("name");

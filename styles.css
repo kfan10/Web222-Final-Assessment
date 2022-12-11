@@ -339,6 +339,7 @@ fieldset{
   }
 
   #error-box{
+    display: none;
     background-color: lightyellow;
     border: 5px solid #e0035f;
     border-radius: 5px;
