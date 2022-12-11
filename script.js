@@ -41,14 +41,11 @@ rateboxclick = false;
 }
 
 // Form Validation
+const form = document.querySelector("form");
 
 form.addEventListener("submit", (event)=>{
 let validCheck = 6;
 let messages = [];
-const form = document.querySelector("form");
-errorEle = document.createElement("div");
-errorEle.id = "error-box";
-errorEle.innerHTML = "";
 //Check name (min. 2 char)
 nameCheck = document.getElementById("name");
 nameReg = /[A-Za-z\s]{2,}/;
@@ -105,6 +102,9 @@ if(msgCheck.value.length < 2){
     validCheck -= 1
 }
 
+    errorEle = document.createElement("div");
+    errorEle.id = "error-box";
+    errorEle.innerHTML = "";
 
 if(validCheck != 6){
     event.preventDefault();
@@ -114,6 +114,8 @@ if(validCheck != 6){
     <pre>${messages.join('\r\n')}</pre>`;
 
     form.appendChild(errorEle);
+}else{
+    errorEle.remove();
 }
 })
 
