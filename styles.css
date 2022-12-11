@@ -383,7 +383,7 @@ fieldset{
     color: white;
 }
 
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 620px){
     .abt-content{
         display: block;
     }
