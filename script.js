@@ -45,6 +45,7 @@ rateboxclick = false;
 const form = document.querySelector("form");
 errorEle = document.createElement("div");
 errorEle.id = "error-box";
+errorEle.style.display = 'none';
 
 form.addEventListener("submit", (event)=>{
 let validCheck = 6;
@@ -109,6 +110,7 @@ if(msgCheck.value.length < 2){
 
 if(validCheck != 6){
     event.preventDefault();
+    errorEle.style.display = 'block';
     errorEle.innerHTML = `
     <h4>Invalid Input</h4>
     <pre>${messages.join('\r\n')}</pre>`;
