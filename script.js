@@ -1,8 +1,12 @@
+// WEB222 - Final Assessment
+// Name: King Chuen Fan
+// Student ID: 165968215
+
 // Hiring Box
 // For Onclick - show the box
 var rateboxclick = false;
 function ShowBox(){
-boxlocation = document.getElementById("ratebox");
+var boxlocation = document.getElementById("ratebox");
     // Creating a line
     const newline = document.createElement("br");
     const newline1 = document.createElement("br");
@@ -47,46 +51,46 @@ form.addEventListener("submit", (event)=>{
 let validCheck = 6;
 let messages = [];
 
-errCheck = document.getElementById("error-box");
+var errCheck = document.getElementById("error-box");
 if(typeof(errCheck) != 'undefined' && errCheck != null){
     errCheck.remove();
 }
 
 //Check name (min. 2 char)
-nameCheck = document.getElementById("name");
-nameReg = /[A-Za-z\s]{2,}/;
+var nameCheck = document.getElementById("name");
+var nameReg = /[A-Za-z\s]{2,}/;
 if(!(nameCheck.value.match(nameReg)) || nameCheck.value === null){
     messages.push("- At least TWO alphabets is required in NAME!");
     validCheck -= 1
 }
 
 // Check Email
-emailCheck = document.getElementById("email");
-emailReg = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+var emailCheck = document.getElementById("email");
+var emailReg = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 if(!(emailCheck.value.match(emailReg)) || emailCheck.value === null){
     messages.push("- Invalid Email Address!");
     validCheck -= 1
 }
 
 // Check Address
-addressCheck = document.getElementById("address");
-addressReg = /.{10,}/;
+var addressCheck = document.getElementById("address");
+var addressReg = /.{10,}/;
 if(!(addressCheck.value.match(addressReg)) || addressCheck.value === null){
     messages.push("- At least TEN characters is required in ADDRESS!");
     validCheck -= 1
 }
 
 // Check City
-cityCheck = document.getElementById("city");
-cityReg = /[A-Za-z\s]{2,}/;
+var cityCheck = document.getElementById("city");
+var cityReg = /[A-Za-z\s]{2,}/;
 if(!(cityCheck.value.match(cityReg)) || cityCheck.value === null){
     messages.push("- Invalid City!");
     validCheck -= 1
 }
 
 // Check Postal Code
-pcodeCheck = document.getElementById("pCode");
-pcodeReg = /[ABCEGHJ-NPRSTVXY]\d[A-Z][ -]?\d[A-Z]\d/;
+var pcodeCheck = document.getElementById("pCode");
+var pcodeReg = /[ABCEGHJ-NPRSTVXY]\d[A-Z][ -]?\d[A-Z]\d/;
 if(!(pcodeCheck.value.match(pcodeReg)) || pcodeCheck.value === null){
     messages.push("- Invalid Postal Code! Example: A1B 0R7");
     validCheck -= 1
@@ -94,7 +98,7 @@ if(!(pcodeCheck.value.match(pcodeReg)) || pcodeCheck.value === null){
 
 // Check Hourly rate box
 if(rateboxclick === true){
-    rateboxCheck = document.getElementById("rate-input");
+    var rateboxCheck = document.getElementById("rate-input");
     if(rateboxCheck.value < 15.5){
         messages.push("- Ontario Minimum Wages is CAD 15.5 per hour.");
         validCheck +=1
@@ -102,13 +106,13 @@ if(rateboxclick === true){
 }
 
 // Check Message
-msgCheck = document.getElementById("msg");
+var msgCheck = document.getElementById("msg");
 if(msgCheck.value.length < 2){
     messages.push("- At least 2 characters is required in MESSAGE");
     validCheck -= 1
 }
 
-    errorEle = document.createElement("div");
+    var errorEle = document.createElement("div");
     errorEle.id = "error-box";
     errorEle.innerHTML = "";
 
