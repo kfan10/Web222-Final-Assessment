@@ -138,6 +138,7 @@ div{
     cursor: pointer;
     margin: 0px 15px 180px 15px;
     width: 200px;
+    font-family: inherit;
 }
 
 .btn:hover{
